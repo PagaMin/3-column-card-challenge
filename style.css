@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --color-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-back-head-buttons: hsl(0, 0%, 95%);
+}
+
+main {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 19.375rem;
+    height: 31.563rem;
+    background-color: var(--orange);
+    border-radius: 0.813rem 0 0 0.813rem;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 2.563rem;
+}
+
+.desc {
+    width: 12rem;
+    height: 7.313rem;
+    color: var(--color-paragraph);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 2.563rem;
+}
+
+button {
+    margin-top: 5rem;
+    width: 9.375rem;
+    height: 3.125rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 1.531rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.sub-card {
+    padding: 2.875rem 0px 2.875rem 3rem;
+}
+
+.card_suvs {
+    width: 19.375rem;
+    height: 31.563rem;
+    background-color: var(--dark-cyan);
+}
+
+.card_luxury {
+    width: 19.375rem;
+    height: 31.563rem;
+    background-color: var(--very-dark-cyan);
+    border-radius: 0rem .813rem .813rem 0rem;
+    padding: 2.875rem 0px 2.875rem 3rem;
+}
+
+.sub-card_suvs {
+    padding: 2.875rem 0px 2.875rem 3rem;
+}
+
+/* BUTTONS */
+
+.button-sedan {
+    color: var(--orange);
+}
+
+.button-suvs {
+    color: var(--dark-cyan);
+}
+
+.button-luxury {
+    color: var(--very-dark-cyan);
+}
+
+@media (max-width: 935px) {
+    .card_suvs {
+        border-radius: 0rem .813rem .813rem 0rem;
+    }
+
+    .card_luxury {
+        border-radius: 0rem 0rem .813rem .813rem;
+    }
+}
+
+@media (max-width: 635px) {
+    .card_suvs {
+        border-radius: 0rem;
+    }
+
+    .card {
+        border-radius: .813rem .813rem 0rem 0rem;
+    }
+
+}
